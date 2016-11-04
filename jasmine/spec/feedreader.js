@@ -85,10 +85,16 @@ $(function() {
     });     
 
     /* TODO: Write a new test suite named "Initial Entries" */
-    describe('Initial Entries', function() {
-        beforeEach(function(done) {
-            loadFeed(0, done);
-        });
+        describe('Initial Entries', function() {
+            var entry;
+
+            beforeEach(function(done) {
+                setTimeout(function() {
+                //loadFeed(0, done);
+                var entry = $('.feed').contents().find('.entry').size();
+                done();
+                }, 100);           
+            });
 
         /* TODO: Write a test that ensures when the loadFeed
          * function is called and completes its work, there is at least
@@ -96,17 +102,32 @@ $(function() {
          * Remember, loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
-         it('verified entry element is present', function() {
-            var entry = $('.feed').contents().find('.entry').size();
+         it('verified entry element is present', function(done) {
             expect(entry).not.toBe(0);
-            //done();
+            done();
          });
     });    
 
-    /* TODO: Write a new test suite named "New Feed Selection"
+    /* TODO: Write a new test suite named "New Feed Selection"*/
+        describe('New Feed Selection', function() {
+            var content;
 
-        /* TODO: Write a test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         * Remember, loadFeed() is asynchronous.
-         */
+            beforeEach(function(done) {
+                loadFeed(1, function() {
+                    content = $('.feed').html();
+                    done();
+                });
+            });
+
+            //  TODO: Write a test that ensures when a new feed is loaded
+            //  * by the loadFeed function that the content actually changes.
+            //  * Remember, loadFeed() is asynchronous.
+            it('verified new feed is loaded', function(done) {
+                 loadFeed(0, function() {
+                     expect($('.feed').html()).not.toEqual(content);
+                     done();
+                 });
+             });
+        });
 }());
+
