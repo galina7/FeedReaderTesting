@@ -10,8 +10,8 @@ In this project is testin web-based application that reads Udacity RSS feeds. It
 
 2. Suite - The Menu
   * Test to verify that menu is changing the visibility:
-    ** visible when menu icon is clicked
-    ** hidden when menu icon is clicked again
+    *** visible when menu icon is clicked
+    *** hidden when menu icon is clicked again
 
 3. Suite - Initial Entries
   * Test to verify that loadFeed function is called and comletes its work, there is at least a sinle .entry element within the .feed container
