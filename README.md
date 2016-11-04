@@ -4,20 +4,20 @@ In this project is testin web-based application that reads Udacity RSS feeds. It
 
 # Test Cases
 1. Suite - RSS Feeds
-* Test to verify that all variable has been defined
-* Test to verify that all URLs are defined and not empty
-* Test to verify that all feeds have names defined and names are not empty
+  * Test to verify that all variable has been defined
+  * Test to verify that all URLs are defined and not empty
+  * Test to verify that all feeds have names defined and names are not empty
 
 2. Suite - The Menu
-* Test to verify that menu is changing the visibility:
-** visible when menu icon is clicked
-** hidden when menu icon is clicked again
+  * Test to verify that menu is changing the visibility:
+    ** visible when menu icon is clicked
+    ** hidden when menu icon is clicked again
 
 3. Suite - Initial Entries
-* Test to verify that loadFeed function is called and comletes its work, there is at least a sinle .entry element within the .feed container
+  * Test to verify that loadFeed function is called and comletes its work, there is at least a sinle .entry element within the .feed container
 
 4. Suite - New Feed Selection
-* Test to verify that when a new feed is loaded by the loadFeed function that the content actually changes
+  * Test to verify that when a new feed is loaded by the loadFeed function that the content actually changes
 
 # How to run
 
