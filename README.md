@@ -29,7 +29,7 @@ If you are having issues, please let us know.
 
 # Contribute
 
-[Issue Tracker:] (https://github.com/galina7/FeedReaderTesting/issues)
-[Source Code:] (https://github.com/galina7/FeedReaderTesting)
+Issue Tracker: (https://github.com/galina7/FeedReaderTesting/issues)  
+Source Code: (https://github.com/galina7/FeedReaderTesting)
 
 
